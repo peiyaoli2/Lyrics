@@ -2,7 +2,7 @@
 
 This is the repository for CS410 course project - peiyaol2, pj2, xinyigu2
 
-Our main goal is to do topic modeling on the lyrics database given some specific parameters.
+Our main goal is to do topic modeling on the lyrics database given some specific query input.
 
 ## Getting started
 Important: please log onto google drive with your illinois account and download our database from
@@ -17,15 +17,18 @@ python lyrics.py <filter_type> <filter_name> <topic_count>
 ```
 
 ### Meaning of parameters
-<filter_type> is the type of filter you want to search for. There are three valid arguments for this parameter: artist, genre or year.
+#### <filter_type>
+is the type of filter you want to search for. There are three valid arguments for this parameter: artist, genre or year.
 
-<filter_name> is either the name of the artist, the name of the genre or the name of the year you want to search for.
+#### <filter_name>
+is either the name of the artist, the name of the genre or the name of the year you want to search for.
 For a complete list of valid arguments, please look at
 ```
 valid_artist.txt valid_genre.txt valid_year.txt
 ```
 
-<topic_count> is the number of topic you want to search for.
+#### <topic_count> 
+is the number of topic you want to search for.
   
 ### Example run
 For example, to search for backstreet boys for 5 topics, you can run our program with
@@ -42,3 +45,11 @@ To search for year 2008 with 8 topics, you can run our program with
 ```
 python lyrics.py year 2008 8
 ```
+
+### Interpreting the output
+
+## Installing packages
+
+## Implementation
+
+## Contributors
