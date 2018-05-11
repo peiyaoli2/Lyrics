@@ -47,6 +47,13 @@ python lyrics.py year 2008 8
 ```
 
 ### Interpreting the output
+Upon finishing running the program, several output will appear inside the program directory.
+#### top 20 words
+This is the list of the top 20 words ranked by the frequency of appearance with your input parameter. It appears as a .txt file.
+#### topic list
+This is the list of topics of your specified count. It appears as a .txt file.
+#### word distribution for each topic
+These are several images demonstrating the word distribution of each topic in the topic list. The amount of images varies base on your input topic_count. They appear as .png files.
 
 ## Installing packages
 
