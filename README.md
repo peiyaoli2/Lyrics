@@ -1,6 +1,7 @@
 # Lyrics
 
 This is the repository for CS410 course project - peiyaol2, pj2, xinyigu2
+
 Our main goal is to do topic modeling on the lyrics database given some specific parameters.
 
 ## Getting started
