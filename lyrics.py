@@ -1,13 +1,13 @@
 import pandas as pd
 import numpy as np
-import sys
-import os.path
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
-import operator
 from sklearn import decomposition
 import matplotlib
 import matplotlib.pyplot as plt
+import operator
+import sys
+import os.path
 
 def rank_terms( A, terms ):
     # get the sums over each column
