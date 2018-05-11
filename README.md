@@ -57,12 +57,16 @@ These are several images demonstrating the word distribution of each topic in th
 Here are a few packages that should be installed before running the program:
 * [pandas](https://pandas.pydata.org/pandas-docs/stable/install.html)
 * [numpy](https://docs.scipy.org/doc/numpy-1.14.0/user/install.html)
-* [metapy](https://github.com/meta-toolkit/metapy)
 * [scikit-learn](http://scikit-learn.org/stable/install.html)
 * [matplotlib](https://matplotlib.org/users/installing.html)
 
 ## Implementation
 
 ## Contributors
+* Peiyao Li (peiyaol2)
+* Peiwen Jiang (pj2)
+* Xinyi Gu (xinyigu2)
 
 ## Resources
+* [Here](https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics) is the lyrics database we used to do our topic modeling from. Note that we cleaned up the database by removing empty values and keywords that only appear once in the database, because we cannot do topic modeling on those keywords.
+* [Here](https://github.com/derekgreene/topic-model-tutorial) is a topic modeling tutorial that we used to accomplish our project.
