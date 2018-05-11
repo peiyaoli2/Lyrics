@@ -63,6 +63,12 @@ Here are a few packages that should be installed before running the program:
 * [matplotlib](https://matplotlib.org/users/installing.html)
 
 ## Implementation
+There are several helper functions and a main function in our program.
+
+### rank_terms
+### get_descriptor
+### plot_top_term_weights
+### run_lyrics
 
 ## Contributors
 * Peiyao Li (peiyaol2)
