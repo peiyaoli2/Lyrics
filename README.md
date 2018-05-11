@@ -47,7 +47,7 @@ python lyrics.py year 2008 8
 ```
 
 ### Interpreting the output
-Upon finishing running the program, several output will appear inside the program directory.
+Upon completion of the program, several output will appear inside the program directory.
 #### top 20 words
 This is the list of the top 20 words ranked by the frequency of appearance with your input parameter. It appears as a .txt file.
 #### topic list
