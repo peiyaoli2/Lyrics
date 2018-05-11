@@ -21,9 +21,10 @@ is the type of filter you want to search for. There are three valid arguments fo
 #### filter_name
 is either the name of the artist, the name of the genre or the name of the year you want to search for.
 For a complete list of valid arguments, please look at
-```
-valid_artist.txt valid_genre.txt valid_year.txt
-```
+* [valid_artist.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_artist.txt)
+* [valid_genre.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_genre.txt)
+* [valid_year.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_year.txt)
+inside our repository.
 
 #### topic_count
 is the number of topic you want to search for.
