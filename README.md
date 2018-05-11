@@ -24,6 +24,7 @@ For a complete list of valid arguments, please look at
 * [valid_artist.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_artist.txt)
 * [valid_genre.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_genre.txt)
 * [valid_year.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_year.txt)
+
 inside our repository.
 
 #### topic_count
