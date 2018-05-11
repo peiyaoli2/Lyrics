@@ -30,7 +30,7 @@ valid_artist.txt valid_genre.txt valid_year.txt
 #### <topic_count> 
 is the number of topic you want to search for.
   
-### Example run
+### Example runs
 For example, to search for backstreet boys for 5 topics, you can run our program with
 ```
 python lyrics.py artist backstreet-boys 5
@@ -53,3 +53,5 @@ python lyrics.py year 2008 8
 ## Implementation
 
 ## Contributors
+
+## Resources
