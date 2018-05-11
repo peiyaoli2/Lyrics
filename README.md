@@ -5,6 +5,12 @@ This is the repository for CS410 course project - peiyaol2, pj2, xinyigu2
 Our main goal is to do topic modeling on the lyrics database given some specific parameters.
 
 ## Getting started
+Important: please log onto google drive with your illinois account and download our database from
+```
+https://drive.google.com/file/d/1g8SArnDU4XOSbdUIZvQ1-glQ5cJnFOlF/view?usp=sharing
+```
+and put the unzipped csv file in the program directory.
+
 To run our program, navigate to the project directory and run
 ```
 python lyrics.py <filter_type> <filter_name> <topic_count>
