@@ -5,7 +5,7 @@ This is the repository for CS410 course project - peiyaol2, pj2, xinyigu2
 Our main goal is to do topic modeling on the lyrics database given some specific query input.
 
 ## Getting started
-Important: please log onto google drive with your illinois account and [download our database](https://drive.google.com/file/d/1g8SArnDU4XOSbdUIZvQ1-glQ5cJnFOlF/view?usp=sharing), then put the unzipped csv file in the program directory.
+*Important*: please log onto google drive with your illinois account and [download our database](https://drive.google.com/file/d/1g8SArnDU4XOSbdUIZvQ1-glQ5cJnFOlF/view?usp=sharing), then put the unzipped csv file in the program directory.
 
 Please also read through the [installing packages section below](https://github.com/peiyaoli2/Lyrics#installing-packages) before running our program.
 
@@ -29,17 +29,17 @@ valid_artist.txt valid_genre.txt valid_year.txt
 is the number of topic you want to search for.
   
 ### Example runs
-For example, to search for backstreet boys for 5 topics, you can run our program with
+* To search for backstreet boys for 5 topics, you can run our program with
 ```
 python lyrics.py artist backstreet-boys 5
 ```
 
-To search for the pop genre with 10 topics, you can run our program with
+* To search for the pop genre with 10 topics, you can run our program with
 ```
 python lyrics.py genre Pop 10
 ```
 
-To search for year 2008 with 8 topics, you can run our program with
+* To search for year 2008 with 8 topics, you can run our program with
 ```
 python lyrics.py year 2008 8
 ```
