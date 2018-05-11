@@ -54,7 +54,7 @@ This is the list of topics of your specified count. It appears as a .txt file.
 These are several images demonstrating the word distribution of each topic in the topic list. The amount of images varies base on your input topic_count. They appear as .png files.
 
 ## Installing packages
-Our program is heavily based on other packages, and here are a few packages that should be installed before running the program:
+Here are a few packages that should be installed before running the program:
 * [pandas](https://pandas.pydata.org/pandas-docs/stable/install.html)
 * [numpy](https://docs.scipy.org/doc/numpy-1.14.0/user/install.html)
 * [metapy](https://github.com/meta-toolkit/metapy)
