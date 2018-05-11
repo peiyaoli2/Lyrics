@@ -11,23 +11,25 @@ https://drive.google.com/file/d/1g8SArnDU4XOSbdUIZvQ1-glQ5cJnFOlF/view?usp=shari
 ```
 and put the unzipped csv file in the program directory.
 
+Please also read through the [installing packages section below](https://github.com/peiyaoli2/Lyrics#installing-packages) before running our program.
+
 To run our program, navigate to the project directory and run
 ```
 python lyrics.py <filter_type> <filter_name> <topic_count>
 ```
 
 ### Meaning of parameters
-#### <filter_type>
+#### filter_type
 is the type of filter you want to search for. There are three valid arguments for this parameter: artist, genre or year.
 
-#### <filter_name>
+#### filter_name
 is either the name of the artist, the name of the genre or the name of the year you want to search for.
 For a complete list of valid arguments, please look at
 ```
 valid_artist.txt valid_genre.txt valid_year.txt
 ```
 
-#### <topic_count> 
+#### topic_count
 is the number of topic you want to search for.
   
 ### Example runs
@@ -56,6 +58,7 @@ This is the list of topics of your specified count. It appears as a .txt file.
 These are several images demonstrating the word distribution of each topic in the topic list. The amount of images varies base on your input topic_count. They appear as .png files.
 
 ## Installing packages
+Our program is heavily based on other packages, and here are a few packages that should be installed before running the program:
 
 ## Implementation
 
