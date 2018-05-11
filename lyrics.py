@@ -9,7 +9,7 @@ import operator
 import sys
 import os.path
 
-def rank_terms( A, terms ):
+def rank_terms(A, terms):
     # get the sums over each column
     sums = A.sum(axis=0)
     # map weights to the terms
@@ -19,23 +19,23 @@ def rank_terms( A, terms ):
     # rank the terms by their weight over all documents
     return sorted(weights.items(), key=operator.itemgetter(1), reverse=True)
 
-def get_descriptor( terms, H, topic_index, top ):
+def get_descriptor(terms, H, topic_index, top):
     # reverse sort the values to sort the indices
-    top_indices = np.argsort( H[topic_index,:] )[::-1]
+    top_indices = np.argsort(H[topic_index,:])[::-1]
     # now get the terms corresponding to the top-ranked indices
     top_terms = []
     for term_index in top_indices[0:top]:
-        top_terms.append( terms[term_index] )
+        top_terms.append(terms[term_index])
     return top_terms
 
-def plot_top_term_weights( terms, H, topic_index, top, filter_type, keyword, topic_count):
+def plot_top_term_weights(terms, H, topic_index, top, filter_type, keyword, topic_count):
     # get the top terms and their weights
-    top_indices = np.argsort( H[topic_index,:] )[::-1]
+    top_indices = np.argsort(H[topic_index,:])[::-1]
     top_terms = []
     top_weights = []
     for term_index in top_indices[0:top]:
-        top_terms.append( terms[term_index] )
-        top_weights.append( H[topic_index,term_index] )
+        top_terms.append(terms[term_index])
+        top_weights.append(H[topic_index,term_index])
     # note we reverse the ordering for the plot
     top_terms.reverse()
     top_weights.reverse()
