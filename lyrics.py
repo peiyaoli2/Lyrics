@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import metapy
 import sys
 import os.path
 from sklearn.feature_extraction.text import CountVectorizer
