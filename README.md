@@ -55,6 +55,11 @@ These are several images demonstrating the word distribution of each topic in th
 
 ## Installing packages
 Our program is heavily based on other packages, and here are a few packages that should be installed before running the program:
+* [pandas](https://pandas.pydata.org/pandas-docs/stable/install.html)
+* [numpy](https://docs.scipy.org/doc/numpy-1.14.0/user/install.html)
+* [metapy](https://github.com/meta-toolkit/metapy)
+* [scikit-learn](http://scikit-learn.org/stable/install.html)
+* [matplotlib](https://matplotlib.org/users/installing.html)
 
 ## Implementation
 
