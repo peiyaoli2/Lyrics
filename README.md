@@ -76,7 +76,7 @@ This is the main function. It has several components:
 * First, it loads the database and checks the input parameter with the database. If input is not valid, it returns None.
 * Then, it creates a vector of lyrics, accounting for stopwords and TF-IDF weightings.
 * Then, it creates a document-term matrix and rank the terms using the helper function.
-* Next, it does NFM decomposition on the lyrics matrix.
+* Next, it does NMF decomposition on the lyrics matrix.
 * Lastly, it outputs our desired top terms and topic list, as well as bar graphs.
 
 ## Contributors
