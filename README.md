@@ -80,6 +80,7 @@ This is the main function.
   
   Generated the valid_year.txt, valid_genre.txt, valid_artist.txt based on the database using python. Found some tutorial   websites to help teammates start the project. Completed the video editing and published in the media. 
 * Xinyi Gu (xinyigu2)
+
   Found some resources websites for the project. Tried different methods to do topic modeling. Helpped debug the code for different versions of the project. 
 
 ## Resources
