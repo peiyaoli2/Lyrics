@@ -66,25 +66,30 @@ Here are a few packages that should be installed before running the program:
 There are several helper functions and a main function in our program. Note that there are also comments inside the source file.
 
 ### rank_terms
-This is a helper function.
+This is a helper function. It helps us look at the terms with the highest TF-IDF scores across all documents in the document-term matrix and rank the terms by their weight.
 ### get_descriptor
-This is a helper function.
+This is a helper function. It extracts the descriptor for a specified topic. The topic descriptor are the top ranked terms from the H factor for each topic.
 ### plot_top_term_weights
-This is a helper function.
+This is a helper function. It creates a bar chart for the specified topic with matplotlib.pyplot, based on the H factor from the current NMF model.
 ### run_lyrics
-This is the main function.
+This is the main function. It has several components:
+* First, it loads the database and checks the input parameter with the database. If input is not valid, it returns None.
+* Then, it creates a vector of lyrics, accounting for stopwords and TF-IDF weightings.
+* Then, it creates a document-term matrix and rank the terms using the helper function.
+* Next, it does NFM decomposition on the lyrics matrix.
+* Lastly, it outputs our desired top terms and topic list, as well as bar graphs.
 
 ## Contributors
 * Peiyao Li (peiyaol2)
 
-  Came up with ideas about the project and designed the outline for the project. Followed the tutorial and wrote a majority part of the source code (lyrics.py) with teammates' help. Wrote a large portion of the readme file. Voiced the video presentation.
+  Came up with ideas about the project and designed the outline for the project. Followed the tutorial and wrote a majority part of the source code (lyrics.py and valid_artist_with_frequency.txt) with teammates' help. Wrote a large portion of the readme file. Voiced the video presentation.
 * Peiwen Jiang (pj2)
   
-  Generated the valid_year.txt, valid_genre.txt, valid_artist.txt based on the database using python. Found some tutorial   websites to help teammates start the project. Completed the video editing and published in the media. 
+  Generated the valid_year.txt, valid_genre.txt, valid_artist.txt(a previous version of valid_artist_with_frequency.txt) based on the database using python. Found some tutorial   websites to help teammates start the project. Completed the video editing and published in the media. 
 * Xinyi Gu (xinyigu2)
 
   Found some resources websites for the project. Tried different methods to do topic modeling. Helpped debug the code for different versions of the project. 
 
 ## Resources
 * [Here](https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics) is the lyrics database we used to do our topic modeling from. Note that we cleaned up the database by removing empty values and keywords that only appear once in the database, because we cannot do topic modeling on those keywords.
-* [Here](https://github.com/derekgreene/topic-model-tutorial) is a topic modeling tutorial that we used to accomplish our project.
+* [Here](https://github.com/derekgreene/topic-model-tutorial) is a topic modeling tutorial that we used to accomplish our project. We have followed part 1 and part 2 for this project.
