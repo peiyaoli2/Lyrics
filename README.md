@@ -5,7 +5,7 @@ This is the repository for CS410 course project - peiyaol2, pj2, xinyigu2
 This program runs on the command line and does topic modeling on the lyrics database given some specific query input.
 
 ## Getting started
-*Important*: please log onto google drive with your illinois account and [download our database](https://drive.google.com/file/d/1g8SArnDU4XOSbdUIZvQ1-glQ5cJnFOlF/view?usp=sharing), then put the unzipped csv file in the program directory.
+*Important*: please log onto google drive with your illinois account and [download our database](https://drive.google.com/file/d/1g8SArnDU4XOSbdUIZvQ1-glQ5cJnFOlF/view?usp=sharing), then put the unzipped csv file in the project directory.
 
 Please also read through the [installing packages section below](https://github.com/peiyaoli2/Lyrics#installing-packages) before running our program.
 
