@@ -11,15 +11,15 @@ Please also read through the [installing packages section below](https://github.
 
 To run our program, navigate to the project directory and run
 ```
-python lyrics.py <filter_type> <filter_name> <topic_count>
+python lyrics.py <filter_type> <keyword> <topic_count>
 ```
 
 ### Meaning of parameters
 #### filter_type
 is the type of filter you want to search for. There are three valid arguments for this parameter: artist, genre or year.
 
-#### filter_name
-is either the name of the artist, the name of the genre or the name of the year you want to search for.
+#### keyword
+is either the name of the artist, the name of the genre or the year you want to search for.
 For a complete list of valid arguments, please look at
 * [valid_artist.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_artist.txt)
 * [valid_genre.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_genre.txt)
@@ -66,9 +66,13 @@ Here are a few packages that should be installed before running the program:
 There are several helper functions and a main function in our program.
 
 ### rank_terms
+This is a helper function.
 ### get_descriptor
+This is a helper function.
 ### plot_top_term_weights
+This is a helper function.
 ### run_lyrics
+This is the main function.
 
 ## Contributors
 * Peiyao Li (peiyaol2)
