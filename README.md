@@ -1,4 +1,4 @@
-# Lyrics
+# Topic Modeling on Lyrics
 
 This is the repository for CS410 course project - peiyaol2, pj2, xinyigu2
 
@@ -32,19 +32,19 @@ is the number of topic you want to search for.
   
 ### Example runs
 * To search for backstreet boys for 5 topics, you can run our program with
-```
-python lyrics.py artist backstreet-boys 5
-```
+  ```
+  python lyrics.py artist backstreet-boys 5
+  ```
 
 * To search for the pop genre with 10 topics, you can run our program with
-```
-python lyrics.py genre Pop 10
-```
+  ```
+  python lyrics.py genre Pop 10
+  ```
 
 * To search for year 2008 with 8 topics, you can run our program with
-```
-python lyrics.py year 2008 8
-```
+  ```
+  python lyrics.py year 2008 8
+  ```
 
 ### Interpreting the output
 Upon completion of the program, several output will appear inside the program directory.
