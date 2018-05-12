@@ -52,16 +52,18 @@ def plot_top_term_weights(terms, H, topic_index, top, filter_type, keyword, topi
     #plt.show()
 
 def run_lyrics(filter_type, keyword, topic_count):
+    # check for invalid arguments
     if (topic_count < 1):
         print ("topic_count must be greater than 0")
         return None
     if filter_type != 'year' and filter_type != 'artist' and filter_type != 'genre':
         print("filter_type is not 'artist', 'year' or 'genre'")
-        #print("no such type word, please enter <artist> or <year> or <genre>")
         return None
+    # account for two possible types for input keyword
     keyword_str = keyword
     if filter_type == 'year':
         keyword = int(keyword)
+    # load database and check keyword again
     print("loading database...")
     df = pd.read_csv('lyrics_cleanup.csv')
     df = df.dropna(axis=0, how='any')
@@ -71,6 +73,8 @@ def run_lyrics(filter_type, keyword, topic_count):
         print("Second argument is not a valid keyword")
         return None
     print("done")
+    
+    # make a vector of lyrics, account for stopwords and TF-IDF weighting
     print("calculating...")
     raw_documents = []
     for index, row in df2.iterrows():
@@ -88,6 +92,7 @@ def run_lyrics(filter_type, keyword, topic_count):
     terms = vectorizer.get_feature_names()
     print("done")
 
+    # rank terms and make top 20 words list
     ranking = rank_terms(A, terms)
     name = 'result_top_20_words_' + filter_type + '_' + keyword_str + '_' + str(topic_count) + '.txt'
     print("writing top 20 words...")
@@ -99,6 +104,7 @@ def run_lyrics(filter_type, keyword, topic_count):
     f1.close()
     print("done")
     
+    # do NFM decomposition on our lyrics matrix
     k = topic_count
     model = decomposition.NMF( init="nndsvd", n_components=k ) 
     # apply the model and extract the two factor matrices
@@ -106,6 +112,7 @@ def run_lyrics(filter_type, keyword, topic_count):
     H = model.components_
     descriptors = []
     name = 'result_topic_list_' + filter_type + '_' + keyword_str + '_' + str(topic_count) + '.txt'
+    
     print("writing topic list...")
     f2 = open(name,"w+")
     f2.write("Topic list for searching " + filter_type + " " + keyword_str + " " + str(topic_count) +"\n")
@@ -116,6 +123,7 @@ def run_lyrics(filter_type, keyword, topic_count):
         f2.write("\nTopic %02d: %s" % ( topic_index+1, str_descriptor ))
     f2.close()
     print("done")
+    
     print("outputting graphs...")
     plt.style.use("ggplot")
     matplotlib.rcParams.update({"font.size": 14})
