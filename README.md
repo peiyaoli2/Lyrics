@@ -77,6 +77,7 @@ This is the main function.
 ## Contributors
 * Peiyao Li (peiyaol2)
 * Peiwen Jiang (pj2)
+  
   Generated the valid_year.txt, valid_genre.txt, valid_artist.txt based on the database using python. Found some tutorial   websites to help teammates start the project. Completed the video editing and published in the media. 
 * Xinyi Gu (xinyigu2)
 
