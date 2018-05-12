@@ -21,11 +21,11 @@ is the type of filter you want to search for. There are three valid arguments fo
 #### keyword
 is either the name of the artist, the name of the genre or the year you want to search for.
 For a complete list of valid keywords, please look at
-* [valid_artist.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_artist.txt)
+* [valid_artist_with_frequency.txt](https://github.com/peiyaoli2/Topic-Modeling-on-Lyrics/blob/master/valid_artist_with_frequency.txt)
 * [valid_genre.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_genre.txt)
 * [valid_year.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_year.txt)
 
-inside our repository.
+inside our repository. Note that we included the frequency for each artist because the topic count cannot exceed frequency. We also excluded artist with frequency lower than 20.
 
 #### topic_count
 is the number of topic you want to search for.
@@ -63,7 +63,7 @@ Here are a few packages that should be installed before running the program:
 * [matplotlib](https://matplotlib.org/users/installing.html)
 
 ## Implementation
-There are several helper functions and a main function in our program.
+There are several helper functions and a main function in our program. Note that there are also comments inside the source file.
 
 ### rank_terms
 This is a helper function.
