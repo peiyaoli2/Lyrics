@@ -25,7 +25,7 @@ For a complete list of valid keywords, please look at
 * [valid_genre.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_genre.txt)
 * [valid_year.txt](https://github.com/peiyaoli2/Lyrics/blob/master/valid_year.txt)
 
-inside our repository. Note that we included the frequency for each artist because the topic count cannot exceed frequency. We also excluded artist with frequency lower than 20.
+inside our repository. Note that we excluded artist with frequency lower than 20.
 
 #### topic_count
 is the number of topic you want to search for.
