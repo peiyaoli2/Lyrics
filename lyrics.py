@@ -84,11 +84,14 @@ def run_lyrics(filter_type, keyword, topic_count):
     with open( "lemur-stopwords.txt", "r" ) as fin:
         for line in fin.readlines():
             custom_stop_words.append(line.strip())
-    vectorizer = CountVectorizer(stop_words = custom_stop_words, min_df = 20)
+    # use a custom stopwords list, set the minimum term-document frequency to 1. You can modify this if you want.
+    vectorizer = CountVectorizer(stop_words = custom_stop_words, min_df = 1)
     A = vectorizer.fit_transform(raw_documents)
     terms = vectorizer.get_feature_names()
-    vectorizer = TfidfVectorizer(stop_words=custom_stop_words, min_df = 20)
+    # we can pass in the same preprocessing parameters
+    vectorizer = TfidfVectorizer(stop_words=custom_stop_words, min_df = 1)
     A = vectorizer.fit_transform(raw_documents)
+    # extract the resulting vocabulary
     terms = vectorizer.get_feature_names()
     print("done")
 
