@@ -16,7 +16,7 @@ python lyrics.py <filter_type> <keyword> <topic_count>
 
 ### Meaning of parameters
 #### filter_type
-is the type of filter you want to search for. There are three valid arguments for this parameter: artist, genre or year.
+is the type of filter you want to search for. There are three valid arguments for this parameter: *artist*, *genre* or *year*.
 
 #### keyword
 is either the name of the artist, the name of the genre or the year you want to search for.
