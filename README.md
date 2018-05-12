@@ -76,6 +76,8 @@ This is the main function.
 
 ## Contributors
 * Peiyao Li (peiyaol2)
+
+  Came up with ideas about the project and designed the outline for the project. Followed the tutorial and wrote a majority part of the source code (lyrics.py) with teammates' help. Wrote a large portion of the readme file. Voiced the video presentation.
 * Peiwen Jiang (pj2)
   
   Generated the valid_year.txt, valid_genre.txt, valid_artist.txt based on the database using python. Found some tutorial   websites to help teammates start the project. Completed the video editing and published in the media. 
