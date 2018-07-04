@@ -80,9 +80,9 @@ This is the main function. It has several components:
 * Lastly, it outputs our desired top terms and topic list, as well as bar graphs.
 
 ## Contributors
-* Peiyao Li
-* Peiwen Jiang
-* Xinyi Gu
+* Peiyao Li (peiyaoli2)
+* Peiwen Jiang (jjsparkle)
+* Xinyi Gu (xinyigu2)
 
 ## Resources
 * [Here](https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics) is the lyrics database we used to do our topic modeling from. Note that we cleaned up the database by removing empty values and keywords that only appear once in the database, because we cannot do topic modeling on those keywords.
