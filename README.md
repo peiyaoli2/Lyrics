@@ -1,7 +1,5 @@
 # Topic Modeling on Lyrics
 
-This is the repository for CS410 course project - peiyaol2, pj2, xinyigu2
-
 This program runs on the command line and does topic modeling on the lyrics database given some specific query input.
 
 ## Getting started
